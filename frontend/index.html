@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/src/assets/images/fav.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FriendTraders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sansation:wght@300;400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Tailwind script -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1E40AF",
+            secondary: "#0F766E",
+            accent: "#E10F05",
+            headings: "#1F2937",
+            text: "#4B5563",
+            light: "#F8FAFC",
+            dark: "#111827",
+          },
+          fontFamily: {
+            heading: ["Sansation", "sans-serif"],
+            body: ["Inter", "sans-serif"],
+          },
+          boxShadow: {
+            'premium': '0 10px 40px -10px rgba(0, 0, 0, 0.1)',
+            'premium-lg': '0 25px 50px -12px rgba(0, 0, 0, 0.15)',
+            'premium-xl': '0 35px 60px -15px rgba(0, 0, 0, 0.2)',
+          },
+          backgroundImage: {
+            'gradient-primary': 'linear-gradient(135deg, #1E40AF 0%, #3730A3 100%)',
+            'gradient-secondary': 'linear-gradient(135deg, #0F766E 0%, #115E59 100%)',
+            'gradient-accent': 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
+            'gradient-light': 'linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%)',
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in-out',
+            'slide-up': 'slideUp 0.6s ease-out',
+            'bounce-gentle': 'bounceGentle 2s infinite',
+          }
+        },
+      },
+    };
+  </script>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      zoom: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
