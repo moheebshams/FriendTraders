@@ -28,6 +28,7 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10
 }
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Application definition
 

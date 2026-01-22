@@ -162,9 +162,11 @@ const Navbar = () => {
                 );
               })}
               
-              {/* CTA Button - Responsive */}
-              <Link
-                to="/contact"
+              {/* Login Button - Responsive */}
+              <a
+                href="http://localhost:8000/admin/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="ml-2 px-4 xl:px-6 py-2.5 
                 bg-primary text-white font-medium rounded-lg text-sm xl:text-base
                 hover:bg-primary/90 active:scale-95 
@@ -173,8 +175,8 @@ const Navbar = () => {
                 min-h-[44px] flex items-center justify-center
                 touch-manipulation shadow-sm hover:shadow"
               >
-                Get Quote
-              </Link>
+                Login
+              </a>
             </div>
 
             {/* Mobile Menu Button - Touch optimized */}
@@ -325,10 +327,12 @@ const Navbar = () => {
             </ul>
           </nav>
 
-          {/* Mobile CTA with safe area */}
+          {/* Mobile Login Button with safe area */}
           <div className="p-4 border-t border-gray-100 flex-shrink-0 safe-area-bottom">
-            <Link
-              to="/contact"
+            <a
+              href="http://localhost:8000/admin/"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={toggleMobileMenu}
               className="block w-full py-3 sm:py-4 bg-primary text-white 
               font-medium rounded-xl text-center hover:bg-primary/90 
@@ -337,8 +341,8 @@ const Navbar = () => {
               min-h-[52px] sm:min-h-[56px] flex items-center justify-center
               touch-manipulation"
             >
-              Get Free Quote
-            </Link>
+              Admin Login
+            </a>
             <p className="mt-3 text-center text-sm text-gray-500">
               Global Logistics Solutions
             </p>
